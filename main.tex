@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[UTF8]{ctex}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfornament}
+\usepackage{setspace}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8\baselineskip}
+\onehalfspacing
+
+\definecolor{ink}{HTML}{2B2B2B}
+\definecolor{accent}{HTML}{6B1F2B}
+\pagecolor{white}
+\color{ink}
+
+% Decorative rules (no external assets)
+\newcommand{\ornamentrule}{%
+  \par\noindent
+  \begin{center}
+    \color{accent}\pgfornament[width=0.72\linewidth]{88}
+  \end{center}
+  \par
+}
+
+\newcommand{\lettertitle}[1]{%
+  \begin{center}
+    \vspace*{0.5em}
+    {\color{accent}\pgfornament[width=0.55\linewidth]{75}\par}
+    \vspace{0.6em}
+    {\Large\bfseries #1\par}
+    \vspace{0.6em}
+    {\color{accent}\pgfornament[width=0.55\linewidth]{75}\par}
+  \end{center}
+  \vspace{0.6em}
+}
+
+\begin{document}
+
+\lettertitle{A Letter for My Wife}
+
+\begin{flushright}
+{\color{accent}\itshape \today}
+\end{flushright}
+
+\ornamentrule
+
+My dearest \emph{[Her Name]}, 
+
+中文
+
+I have been trying to find the right words for something that has become wonderfully simple in my heart: I love you. Not as an idea, not as a moment, but as a steady truth I return to---in ordinary mornings, in quiet evenings, and in every small space between.
+
+You have a grace that changes the atmosphere of a room. When life is loud, you bring calm; when it is heavy, you bring lightness; when it is uncertain, you bring a kind of courage that feels like home. I admire the way you care, the way you notice, the way you make beauty out of what others might overlook.
+
+If I could give you one gift in return for all you are, it would be this: the certainty that you are cherished. Not only for what you do, but for who you are---your laughter, your tenderness, your strength, your mind, your patience, and even the soft, honest edges that make you human and real.
+
+Thank you for building a life with me. Thank you for the thousand unseen kindnesses, for the forgiveness you offer, for the dreams you keep, for the love you practice like an art. I am proud to be your husband. I am grateful to be your friend. And I would choose you again, in any lifetime, in any version of the world.
+
+\ornamentrule
+
+\begin{flushright}
+With all my love,\\[0.5em]
+{\Large\itshape [Your Name]}
+\end{flushright}
+
+\vfill
+\begin{center}
+{\color{accent}\pgfornament[width=0.78\linewidth]{87}}
+\end{center}
+
+\end{document}
